@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "kosyak-fetch": {
+      "command": "npx",
+      "args": ["-y", "kosyak-fetch-mcp"]
+    },
+    "koon": {
+      "command": "npx",
+      "args": ["-y", "koon-mcp"]
+    },
+    "bilibili": {
+      "command": "npx",
+      "args": ["-y", "bilibili-mcp"]
+    }
+  }
+}

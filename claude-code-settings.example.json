@@ -1,0 +1,33 @@
+{
+  "_说明": "将此文件内容合并到 ~/.claude/settings.json（勿直接覆盖，先备份原文件）",
+  "_Windows路径": "C:\\Users\\你的用户名\\.claude\\settings.json",
+  "_macOS_Linux路径": "~/.claude/settings.json",
+
+  "env": {
+    "_说明": "根据你使用的API服务商替换以下值",
+    "ANTHROPIC_BASE_URL": "https://api.deepseek.com/anthropic",
+    "ANTHROPIC_AUTH_TOKEN": "替换为你的API_Key",
+    "ANTHROPIC_MODEL": "deepseek-v4-pro[1m]",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "deepseek-v4-flash",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "deepseek-v4-flash",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "deepseek-v4-pro[1m]"
+  },
+
+  "effortLevel": "high",
+  "enableAllProjectMcpServers": true,
+
+  "permissions": {
+    "allow": [
+      "mcp__cc-web__research_brief",
+      "mcp__cc-web__web_search",
+      "mcp__cc-web__fetch_url",
+      "mcp__kosyak-fetch__*",
+      "mcp__bilibili__*"
+    ]
+  },
+
+  "_其他可选配置": {
+    "skipWebFetchPreflight": "如果使用Claude官方API且WebFetch被拦，设为true可跳过域名安全预检",
+    "model": "如果不设置env，也可直接指定模型名称"
+  }
+}
